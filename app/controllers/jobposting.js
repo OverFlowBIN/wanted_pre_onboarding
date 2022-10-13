@@ -9,14 +9,12 @@ module.exports = {
           include: [
             {
               model: Company,
-              attributes: ["nation", "city"],
+              attributes: ["name", "nation", "city"],
             },
           ],
-          attributes: ["id", "company_id", "position", "compensation", "skill"],
+          attributes: ["id", "position", "compensation", "skill"],
           order: [["id", "DESC"]],
         });
-
-        // id, company_id, 국가, 지역, postion, compensation, skill
 
         res.status(200).send(allJobPosting);
       } catch {
@@ -28,7 +26,6 @@ module.exports = {
   jobposting: {
     get: async (req, res) => {
       let { company, nation, skill } = req.query;
-      console.log(skill);
 
       try {
         let allJobPosting = await Jobposting.findAll({

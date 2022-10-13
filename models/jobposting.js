@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Jobposting.belongsTo(models.Company, {
+        foreignKey: "company_id",
         onDelete: "cascade",
       });
     }
