@@ -1,6 +1,6 @@
-## \*\* 프리온보딩 백엔드 코스 5차 과제
+## 프리온보딩 백엔드 코스 5차 과제
 
-- Useage
+- Usage
   - npm i
   - npm start
   - npm migrate
