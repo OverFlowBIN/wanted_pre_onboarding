@@ -1,12 +1,11 @@
 ## \*\* 프리온보딩 백엔드 코스 5차 과제
 
 - Useage
-  '''javascript
-  npm i
-  npm start
-  npm migrate
-  npm seed
-  '''
+  - npm i
+  - npm start
+  - npm migrate
+  - npm seed
+
 
 ---
 
